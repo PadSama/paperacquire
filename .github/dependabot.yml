@@ -1,0 +1,13 @@
+# Dependency update pull requests; CI must pass before any of them is merged. The browser
+# drivers are pinned in .github/workflows/ci.yml and bumped by hand after a green CI run.
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
