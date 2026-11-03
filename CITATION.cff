@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "paperacquire: polite, entitlement-respecting acquisition of scholarly full texts"
+abstract: >-
+  A tool for acquiring the full texts of scholarly articles for literature research.
+  For each record it tries legal open-access copies first, then the channels the user is
+  already entitled to (publisher APIs, the user's own institutional login in a real
+  browser), then working-paper versions, with daily limits, randomized gaps and stop rules
+  built in, and a title check on every PDF obtained from the network.
+authors:
+  - family-names: "Yuan"
+    given-names: "Quan"
+    orcid: "https://orcid.org/0009-0009-3011-3739"
+version: "0.6.0"
+date-released: "2026-11-03"
+license: Apache-2.0
+repository-code: "https://github.com/PadSama/paperacquire"
+keywords:
+  - full-text retrieval
+  - literature review
+  - systematic review
+  - open access
+  - research software

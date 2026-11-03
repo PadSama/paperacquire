@@ -130,6 +130,11 @@ that a publisher still serves its pages the same way. Entitlement depends on you
 and network. Beyond the generic open-access steps, publisher-specific handling exists for
 ScienceDirect, Wiley, SAGE, Taylor & Francis, Springer and Emerald.
 
+## Citation
+
+If you use paperacquire in research, please cite it. [CITATION.cff](CITATION.cff) holds the
+citation metadata; GitHub's "Cite this repository" button formats it as APA or BibTeX.
+
 ## Third-party software
 
 None of these is included in this repository; pip installs them as dependencies.

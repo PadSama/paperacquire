@@ -16,6 +16,7 @@ User-visible changes, newest first. Versions follow `paper_acquire.__version__`.
 - PyMuPDF is imported by its current module name, with a fallback for older releases.
 - The default per-record state file is `work/status.json`.
 - The User-Agent names the tool and its version, plus the contact e-mail only when configured.
+- Citation metadata (`CITATION.cff`) and Dependabot configuration for dependency updates.
 
 ## Earlier versions (developed before the public release)
 
