@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-acquire"
+dynamic = ["version"]
+description = "Polite, entitlement-respecting acquisition of scholarly full texts for literature research"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31", "pymupdf>=1.24"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+[project.optional-dependencies]
+browser = ["playwright>=1.60,<2"]
+patchright = ["patchright>=1.60,<2"]
+test = ["pytest>=8"]
+
+[project.urls]
+Repository = "https://github.com/PadSama/paperacquire"
+Issues = "https://github.com/PadSama/paperacquire/issues"
+
+[tool.setuptools]
+packages = ["paper_acquire"]
+
+[tool.setuptools.package-data]
+paper_acquire = ["config.example.json"]
+
+[tool.setuptools.dynamic]
+version = {attr = "paper_acquire.__version__"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
